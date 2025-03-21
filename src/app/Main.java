@@ -10,7 +10,7 @@ public class Main {
         int b = 3;
         //MathOperation mathOperation = (a, b) -> a + b;
         MathOperation mathOperation = Integer::sum;
-        System.out.printf("%d + %d = %d%n", a, b, mathOperation.operate(10, 3));
+        System.out.printf("%d + %d = %d%n", a, b, mathOperation.operate(a, b));
 
         String testString = "test";
         //StringManipulator stringManipulator = input -> input.toUpperCase();
