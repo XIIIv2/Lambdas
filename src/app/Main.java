@@ -24,6 +24,6 @@ public class Main {
         int min = 1;
         int max = 100;
         Supplier<Integer> randomNumberGenerator = () -> RandomNumberGenerator.generateRandomNumber(min , max);
-        System.out.printf("Random number (min=1=%d, max=%d): %d%n", min, max, randomNumberGenerator.get());
+        System.out.printf("Random number (min=%d, max=%d): %d%n", min, max, randomNumberGenerator.get());
     }
 }
