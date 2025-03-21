@@ -19,7 +19,7 @@ public class Main {
 
         String processString = "LoReM iPSuM";
         Function<String, Integer> stringListProcessor = StringListProcessor::countUpperCase;
-        System.out.printf("Total upper case letters in \"%s\": %s%n", processString, stringListProcessor.apply(processString));
+        System.out.printf("Total upper case letters in \"%s\": %d%n", processString, stringListProcessor.apply(processString));
 
         int min = 1;
         int max = 100;
