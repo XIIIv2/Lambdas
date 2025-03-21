@@ -8,8 +8,12 @@ public class Main {
     public static void main(String[] args) {
         int a = 10;
         int b = 3;
-        //MathOperation mathOperation = (a, b) -> a + b;
-        MathOperation mathOperation = Integer::sum;
+        MathOperation mathOperation = new MathOperation() {
+            @Override
+            public int operate(int a, int b) {
+                return a + b;
+            }
+        };
         System.out.printf("%d + %d = %d%n", a, b, mathOperation.operate(a, b));
 
         String testString = "test";
